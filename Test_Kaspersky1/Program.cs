@@ -20,7 +20,6 @@ namespace Test_Kaspersky1
                 Pop();
             }
         }
-
         static void mythread2()
         {
             if (objQueue.Count != 0)
@@ -56,7 +55,7 @@ namespace Test_Kaspersky1
                 lock (locker)
                     objQueue.Enqueue(item);
                     Console.WriteLine("Вставили элемент {0}", item);
-            Console.WriteLine("Количество элементов {0}", objQueue.Count);           
+                    Console.WriteLine("Количество элементов {0}", objQueue.Count);           
         }
     }
 }
